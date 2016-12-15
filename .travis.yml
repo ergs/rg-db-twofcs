@@ -1,7 +1,7 @@
 language: python
-#env:
-#  global:
-#    - secure: "O+JtoMpQB1p7Tx3pu6FbZ3kWkphLDr3grnuEGKyMkD8MXwCSbKY/oPZro6dkKy6zKGmx6YJfzedZ+qFL9GDHGXsdN4BT0XNOxdr3IKw51p85fisikpdf/P8QYF8U4df1obvq/dPXx6ONN4L/LHb/NSk6a5MU5bRC7tuKUcxYA7MBGoHBiCWrcidFqB2Loq7+Ji/lxF/gZOnRgs/xUx4vVy+p15FeJE8D3AJ5dmMtLr7Kih71S8jtfZFi9Xn+Ya3oH/ildxzrOAPZhffzL16lh6EwE0ODvRTKCyLOQ1BRNESHzKRt60YSJQrPgQjZPlALa5jtII5ML6YGskS57LHi3sCDLOYb8N5YJUqB0UtAOqo6DbXHOqrY4M1iWLZfEMzXYOTn8yv3HfqjvNDaE1OOYG8jmnL8ZBaeg7W5ZAF06pry0xd/pr8UtkG5OOoejIUCwEG3i2xVbZrCjpRh6AHyWh/u8rSQT3glL40igLP72RbEbiHeRigFMiD0iusojmFIgwL+G7X5tHDsq2fwrUHqF9bWbywIGk3c5u5mV9CqGJ0M64m1FxYekyrWaBQ1WH4KwAcmx5BkIjmqZ2eSiKN88I4d+jedeUqswi5wMKf/l/X242w4vJ54EPCkM0VbbO57ecJdGX8CclYlJfv7EMuF1UuexzPnIolEybAyB+UlFik="
+env:
+  global:
+    - secure: "J6sbGbN6I3jvC1a31CCU2O9nR4gzpKgonvhrSh+I3r/F4/S1+60NPiEIkQQyz+v/JbdPb4o7l86Ren4+gEMt3emMzqMM6d0BLBLo74Pa+zc/DJzaMmWMm6aJrdPLu3SYcbKcC0TTUi270aq4G9RDCckPw+lVqmBzEA6PrHtrqijh9QcKPikkLszzT1DsnBPt/XKVLrvwLY36RChxoJ/QYX37liU/0QrAThD8qhDZ9XY0VQ3MJq/xmFDjQx+9tLLvgfNG6Ektc2XtXz5vZrx6kpFdSfUeeQ2HLxf0K4miqa3rGuINm893w5O3Kj0S7ChOf3UzoPxvTCgzqRCdACaqYha+1MOvZTTRpY+4aF82CzE+lY/TKaQtnBaNVK6D5dLa7FQ9UitP2VIOW0dZUif213gP5do0eJgBAC4ATg/Y1K7X5qT2oVeqV7Xcw263MteKHiA9TphuBIUFxdYJP6qPxImO5+Rks3uJOs8491jmkuJHNqkLep63m3xVgIQbH9wGbmTlRMfdF4ua7zWz+G+CoqtW6gooECF8aoBsA2k+1kopaxC1858bHna/iy+0oPPAWtmtdyKjzelq5Jrzsqk8dATEHdfexu3pbXT/p+1tYMtDNDifuKzORpi2luLtDynZ8nJWNf7L2pygqh4NAS5bA3jQtLmLvR2sTv1xGZN8tjk="
 
 matrix:
   include:
@@ -30,5 +30,4 @@ script:
   - git clone https://github.com/ergs/TWoFCS.git twofcs;
     cd twofcs;
     regolith build html;
-#    doctr deploy --deploy-repo ergs/twofcs.ergs.sc.edu --gh-pages-docs ".";
-
+    doctr deploy --deploy-repo ergs/twofcs.ergs.sc.edu --gh-pages-docs ".";

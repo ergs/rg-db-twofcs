@@ -30,4 +30,5 @@ script:
   - git clone https://github.com/ergs/TWoFCS.git twofcs;
     cd twofcs;
     regolith build html;
-    doctr deploy --deploy-repo ergs/twofcs.ergs.sc.edu --gh-pages-docs ".";
+    cd ..;
+    doctr deploy --deploy-repo ergs/twofcs.ergs.sc.edu --gh-pages-docs "." --built-docs twofcs/_build/html;

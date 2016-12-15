@@ -20,6 +20,8 @@ before_install:
     conda config --add channels conda-forge;
     conda update -q conda;
     conda info -a;
+    git config --global user.email "scopatz@gmail.com";
+    git config --global user.name "Anthony Scopatz";
 
 install:
   - conda install doctr regolith;

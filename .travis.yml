@@ -18,6 +18,8 @@ before_install:
     hash -r;
     conda config --set always_yes yes --set changeps1 no;
     conda config --add channels conda-forge;
+    conda create -n py35 python=3.5;
+    source activate py35;
     conda update -q conda;
     conda info -a;
     git config --global user.email "scopatz@gmail.com";

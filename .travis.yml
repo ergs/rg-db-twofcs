@@ -33,4 +33,4 @@ script:
     cd twofcs;
     regolith build html;
     cd ..;
-    doctr deploy --deploy-repo ergs/twofcs.ergs.sc.edu --gh-pages-docs "." --built-docs twofcs/_build/html;
+    doctr deploy --deploy-repo ergs/twofcs.ergs.sc.edu --built-docs twofcs/_build/html .;
